@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+MX:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+    scroll-padding: 20em;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 1;
+    background: #694628;
+    padding: 2px;
+}
+
+header .logo a {
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 45%;
+
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    display: flex;
+    margin: 5px 150px;
+    font-size: 21px;
+    color: white;
+    padding: 10px 40px; 
+    justify-content: space-evenly;
+
+}
+
+header nav ul li:nth-child(1) {
+    position: relative;
+    left: -600px;
+}
+
+header nav ul li:nth-child(2) {
+    position: absolute;
+    left: 400px;
+}
+
+header nav ul li:nth-child(3) {
+    position: absolute;
+    right: 400px;
+}
+
+header nav ul li:nth-child(4) {
+    position: absolute;
+    right: 200px;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+body {
+    background-color: #f5f5eb;
+}
+
+/* Cover */
+
+.container {
+    background-image: url("modl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+
+.cover h2 {
+    font-size: 150px;
+    padding: 5px;
+    color: black;
+    margin-left: 5%;
+    margin-top: 0px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.cover h2 span {
+    display: flex;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-left: 150px;
+    color: black;
+
+}
+
+.cover p {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-top: 80px;
+    margin-left: 150px;
+    display: flex;
+
+}
+
+.container .box {
+    width: 45%;
+    height: 110vh;
+    background-color: #c9b9a0;
+    opacity: 90%;
+}
+
+.container .button a {      
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-top: 2%;
+    margin-left: 150px;
+    display: inline-block;
+    background: black;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.line1 {
+    width: 3px;
+    height: 350px;
+    background-color: black;
+    position: absolute;
+    left: 800px;
+    top: 670px;
+}
+
+.line2 {
+    width: 700px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 150px;
+    top: 980px;
+}
+
+/* Services */
+
+.services-header {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 80px;
+    font-weight: 100;
+    font-family: "Great Vibes", cursive;
+    max-height: 100vh;
+    position: relative;
+}
+
+.bg-box {
+    width: 400px;
+    height: 300px;
+    background-color: #1f0d06;
+    margin-left: 75%;
+    margin-top: -5%;
+    position: absolute;
+    opacity: 44%;
+}
+
+.bg-box2 {
+    width: 300px;
+    height: 210px;
+    background-color: #cac3b7;
+    margin-top: 15%;
+    margin-left: 5%;
+    position: absolute;
+}
+
+.services {
+    background-color: #e1daca;
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 0.5%;
+    position: absolute;
+}
+
+.services .services-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+    background: #e1daca;
+    max-height: 400px;
+}
+
+.services .services-content .hair-dressing, .nail-care, .eyebrow-treatment {
+    width: 250px;
+
+}
+
+.services .services-content .hair-dressing .hair-dressing-image img {
+    border-radius: 10%;
+}
+
+.services .services-content .nail-care .nail-care-image img {
+    border-radius: 10%;
+}
+
+.services .services-content .eyebrow-treatment .eyebrow-treatment-image img {
+    border-radius: 10%;
+}
+
+.services .services-content .hair-dressing-body, .nail-care-body, .eyebrow-treatment-body {
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.services .services-content .hair-dressing-body h2, .nail-care-body h2, .eyebrow-treatment-body h2 {
+    color: black;
+}
+
+
+/* ***Services Content*** */
+
+.Contentsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 70%;
+    margin-top: 30%;
+    padding: 0 200px;
+}
+
+/* Hair */
+
+.hair-content {
+    margin-top: 150px;
+}
+
+.hair-content .hair-content-text {
+    display: flex;
+    flex: 1;
+    justify-content: right;
+    text-align: left;
+    padding: 10px 0px;
+    letter-spacing: 1px;
+    right: -80px;
+    position: relative;
+}
+
+.hair-content .hair-title {
+    justify-content: right;
+    display: flex;
+    right: 200px;
+    position: relative;
+}
+
+.hair-content .hair-content-text .column1 {
+    width: calc(20%);
+    line-height: 1.26;
+    margin-right: 10px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.hair-content .hair-content-text .column2 {
+    width: calc(20%);
+    margin-right: 0px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.hair-content .hair-title h2 {
+    font-size: 80px;
+    font-weight: 800;
+    font-family: "Great Vibes", cursive;
+}
+
+.hair-content .hair-content-text h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.hair-content .hair-content-text p {
+    font-size: 20px;
+}
+
+
+.hair-img {
+    max-width: 800px;
+    margin-left: 0px;
+    position: absolute;
+    margin-top: -250px;
+    
+}
+
+.hair-box {
+    position: absolute;
+    width: 600px;
+    height: 700px;
+    background-color: #9b7d61;
+    left: 0;
+    margin-top: -900px;
+    opacity: 15%;
+}
+
+/* Nail */
+
+.nail-content {
+    margin-top: 35%;
+    justify-content: left;
+}
+
+.nail-content .nail-content-text {
+    display: flex;
+    flex: 1;
+    text-align: left;
+    padding: 10px 0px;
+    letter-spacing: 1px;
+    right: -80px;
+    position: relative;
+}
+
+.nail-content .nail-title {
+    display: flex;
+    left: 170px;
+    position: relative;
+}
+
+.nail-content .nail-content-text .column1 {
+    width: calc(20%);
+    margin-right: 10px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.nail-content .nail-content-text .column2 {
+    width: calc(20%);
+    line-height: 1.;
+    margin-right: 0px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.nail-content .nail-title h2 {
+    font-size: 80px;
+    font-weight: 800;
+    font-family: "Great Vibes", cursive;
+}
+
+.nail-content .nail-content-text h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.nail-content .nail-content-text p {
+    font-size: 20px;
+}
+
+
+.nail-img {
+    max-width: 700px;
+    margin-left: 0px;
+    position: absolute;
+    margin-top: -310px;
+    right: 200px;
+    
+}
+
+.nail-box {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-color: #fed8a7;
+    right: 0;
+    margin-top: 390px;
+    opacity: 30%;
+}
+
+
+/* Eyebrow */
+
+.eyebrow-content {
+    margin-top: 350px;
+}
+
+.eyebrow-content .eyebrow-content-text {
+    display: flex;
+    flex: 1;
+    justify-content: right;
+    text-align: left;
+    padding: 0px 0px;
+    letter-spacing: 1px;
+    right: -80px;
+    position: relative;
+}
+
+.eyebrow-content .eyebrow-title {
+    justify-content: right;
+    display: flex;
+    right: 100px;
+    position: relative;
+}
+
+.eyebrow-content .eyebrow-content-text .column1 {
+    width: calc(20%);
+    margin-right: 10px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.eyebrow-content .eyebrow-content-text .column2 {
+    width: calc(20%);
+    margin-right: 0px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.eyebrow-content .eyebrow-title h2 {
+    font-size: 80px;
+    font-weight: 800;
+    font-family: "Great Vibes", cursive;
+}
+
+.eyebrow-content .eyebrow-content-text h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.eyebrow-content .eyebrow-content-text p {
+    font-size: 20px;
+}
+
+
+.eyebrow-img {
+    max-width: 700px;
+    margin-left: 0px;
+    position: absolute;
+    margin-top: -250px;
+    
+}
+
+.eyebrow-box {
+    position: absolute;
+    width: 600px;
+    height: 550px;
+    background-color: #9b7d61;
+    left: 0;
+    margin-top: 280px;
+    opacity: 15%;
+}
+
+/* Contacts */
+.contact-container
+{
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    margin-top: 25%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1, h3 
+{
+    color: #333;
+}
+p 
+{
+    color: #666;
+}
+.booking-box 
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.contact-left, .contact-right 
+{
+    flex: 1;
+}
+.contact-left 
+{
+    padding-right: 20px;
+}
+.contact-right 
+{
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+}
+form 
+{
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+button 
+{
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] 
+{
+    width: calc(100% - 22px);
+}
+button 
+{
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover 
+{
+    background-color: #45a049;
+}
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+table td 
+{
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+table td:first-child 
+{
+    width: 120px;
+    font-weight: bold;
+}
+@media (max-width: 600px) 
+{
+    .booking-box {
+        flex-direction: column;
+    }
+
+    .contact-right {
+        border-left: none;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}
+.feedback-message {
+    margin-top: 60px;
+    padding: 40px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.feedback-message h4 {
+    font-size: 20px;
+    margin-bottom: 7px;
+    margin-top: 0;
+    color: #333;
+}
+
+.feedback-message p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.feedback-message input[type="text"] {
+    padding: 20px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;;
+    box-sizing: border-box;
+}
+
+.feedback-message button {
+    padding: 10px 20px;
+    
+    font-size: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-message button:hover {
+    background-color: #0056b3;
+}
+iframe {
+    width: 500px;
+    height: 400px;
+}
